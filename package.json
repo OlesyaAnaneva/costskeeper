@@ -1,0 +1,27 @@
+{
+  "name": "costskeeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlesyaAnaneva/costskeeper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlesyaAnaneva/costskeeper/issues"
+  },
+  "homepage": "https://github.com/OlesyaAnaneva/costskeeper#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.9.16",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}
