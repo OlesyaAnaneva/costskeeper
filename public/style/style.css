@@ -1,6 +1,6 @@
 .welcomeDiv {
   display: inline-flex;
-    justify-content: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -10,13 +10,23 @@
   font-size: 18px;
 }
 
-.red.lighten-3 {  
+.red.lighten-3 {
   margin: 10px;
 }
-h2{
-  color: rgb(180, 100, 100);
+h2 {
+  color: rgb(212, 136, 136);
   position: relative;
 }
-p{
-  font-size: 20px;
+p {
+  font-size: 25px;
+}
+#categ {
+  color: rgb(255, 0, 191);
+}
+#total {
+  color: rgb(0, 183, 255);
+}
+.btn{
+  background-color: rgb(196, 83, 143);
+
 }
