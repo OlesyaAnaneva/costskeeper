@@ -3,8 +3,7 @@
 </button>
 
 <h3 id="content"></h3>
-<div id="contentDiv"></div>
-
+<p>Say just two words... like "cola" and "fifty"</p>
 <table class="highlight">
   <thead>
     <tr>
@@ -13,15 +12,20 @@
     </tr>
   </thead>
 
-  <tbody>
-    <tr class="items">
-      {{!-- <td class="itemName">Eclair</td> --}}
-      {{!-- <td class="itemPrice">$0.87</td> --}}
+  <tbody class="items">
+    {{#each words}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.price}}</td>
     </tr>
+    {{/each}}
   </tbody>
 </table>
-<style>
-  .highlight{
-    font-size: 18px;
-  }
-</style>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p><a class="waves-effect #ef9a9a red lighten-3 btn" href='/auth/logout'>Log out</a></p>

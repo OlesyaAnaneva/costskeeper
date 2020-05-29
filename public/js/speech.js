@@ -21,15 +21,27 @@ recognition.onresult = function (event) {
   response.then((res) => {
     return res.json()
   }).then((data) => {
+    let itemNameResult = data.tokens[0].substring;
+    let itemPriceResult = data.tokens[1].substring;
+    const postResponse = fetch('/items', {
+      method: 'POST',
+      body: JSON.stringify({
+        itemNameResult, itemPriceResult
+      }),
+      headers: {
+        "Content-type": 'application/json'
+      },
+    });
     console.log(data.tokens);
     const tbody = doc.getElementsByTagName('tbody')[0];
-    const trItems = tbody.getElementsByClassName('items')[0];
+    const trItems = doc.createElement('tr');
+    tbody.appendChild(trItems);
     const itemName = doc.createElement('td');
     const itemPrice = doc.createElement('td');
     trItems.appendChild(itemName);
     trItems.appendChild(itemPrice);
-    itemName.innerHTML = data.tokens[0].substring;
-    itemPrice.innerHTML = data.tokens[1].substring;
+    itemName.innerHTML = itemNameResult;
+    itemPrice.innerHTML = itemPriceResult;
   })
     .catch((error) => console.log('ERROR', error));
 };

@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon --ignore sessions ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/OlesyaAnaneva/costskeeper#readme",
   "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "hbs": "^4.1.1",
     "mongoose": "^5.9.16",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "session-file-store": "^1.4.0"
   }
 }
