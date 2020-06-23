@@ -13,3 +13,4 @@ npm start
 ```
 ## Authors:
 -[Olesya Ananeva](https://github.com/OlesyaAnaneva)
+public/costkeeper4.png
